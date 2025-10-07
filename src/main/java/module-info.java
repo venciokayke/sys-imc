@@ -5,4 +5,6 @@ module org.sysimc {
 
     opens org.sysimc to javafx.fxml;
     exports org.sysimc;
+    exports org.sysimc.controller;
+    opens org.sysimc.controller to javafx.fxml;
 }

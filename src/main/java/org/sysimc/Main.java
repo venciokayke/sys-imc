@@ -10,7 +10,7 @@ import org.sysimc.utils.PathFXML;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
