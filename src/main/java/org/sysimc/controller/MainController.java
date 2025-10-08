@@ -25,8 +25,11 @@ public class MainController {
     @FXML
     protected void onCalcularImcClick() {
         DecimalFormat df = new DecimalFormat();
+        String altura = this.txtAltura.getText();
+        altura = altura.replace(",", ".");
+
         this.pessoa.setNome(this.txtNome.getText());
-        this.pessoa.setAltura(Float.parseFloat(this.txtAltura.getText()));
+        this.pessoa.setAltura(Float.parseFloat(altura));
         this.pessoa.setPeso(Float.parseFloat(this.txtPeso.getText()));
 
         df.applyPattern("#0.00");
