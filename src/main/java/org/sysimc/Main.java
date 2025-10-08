@@ -15,8 +15,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(new FileInputStream(PathFXML.pathBase() + "\\main-view.fxml"));
-        Scene scene = new Scene(root, 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(root, 630, 350);
+        stage.setTitle("Calculadora de IMC");
         stage.setScene(scene);
         stage.show();
     }
